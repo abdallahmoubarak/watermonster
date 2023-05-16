@@ -1,0 +1,15 @@
+.next
+.storybook
+app
+node_modules
+stories
+.eslintrc.json
+.gitignore
+.npmignore
+next.config.js
+package-lock.json
+tailwind.config.js
+next-env.d.ts
+postcss.config.js
+tsconfig.json
+tsconfig.tsbuildinfo

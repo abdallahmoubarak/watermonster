@@ -1,0 +1,51 @@
+{
+  "name": "watermonster",
+  "version": "0.1.14",
+  "license": "MIT",
+  "author": "Abdallah Moubarak",
+  "description": "This package is Water Monster assets",
+  "main": "index.ts",
+  "publishConfig": {
+    "@abdallahmoubarak:registry": "https://npm.pkg.github.com/@abdallahmoubarak/wm-assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdallahmoubarak/wm-assets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abdallahmoubarak/wm-assets/issues"
+  },
+  "homepage": "https://github.com/abdallahmoubarak/wm-assets#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsc",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-interactions": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/blocks": "^7.0.12",
+    "@storybook/nextjs": "^7.0.12",
+    "@storybook/react": "^7.0.12",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/node": "20.1.4",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "eslint-plugin-storybook": "^0.6.12",
+    "next": "13.4.2",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "storybook": "^7.0.12",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
+  }
+}
