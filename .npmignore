@@ -1,15 +1,31 @@
-.next
-.storybook
-app
-node_modules
-stories
-.eslintrc.json
-.gitignore
-.npmignore
-next.config.js
-package-lock.json
-tailwind.config.js
-next-env.d.ts
-postcss.config.js
+# Development and build files
+.next/
+node_modules/
+out/
+dist/
+coverage/
+
+# Configuration files
+.eslintignore
+.prettierrc
+stylelint.config.js
 tsconfig.json
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Test files
+__tests__/
+test/
+
+# Miscellaneous
+*.log
+*.md
+*.yml
+*.config.js
+
+
+app
+next-env.d.ts
 tsconfig.tsbuildinfo

@@ -1,6 +1,6 @@
 import React from "react";
-import SectionHeader from "../../SectionHeader";
-import TeamMember from "../TeamMember";
+import SectionHeader from "../SectionHeader";
+import TeamMember from "../molecules/TeamMember";
 
 const teamMembers = [
   {

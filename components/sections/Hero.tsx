@@ -1,4 +1,4 @@
-import Button from "../../Button";
+import Button from "../Button";
 import { BsWhatsapp } from "react-icons/bs";
 // import AnimatedWifi from "../../assets/AnimatedWifi";
 import Link from "next/link";
