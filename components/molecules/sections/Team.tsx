@@ -1,9 +1,6 @@
 import React from "react";
-import SectionHeader from "../SectionHeader";
-import Link from "next/link";
-import Button from "../Button";
-import { BsWhatsapp } from "react-icons/bs";
-import TeamMember from "./TeamMember";
+import SectionHeader from "../../SectionHeader";
+import TeamMember from "../TeamMember";
 
 const teamMembers = [
   {
