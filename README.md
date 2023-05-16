@@ -1,3 +1,3 @@
 # Water Monster Assets
 
-This package is Water Monster assets
+This package containes Water Monster assets
