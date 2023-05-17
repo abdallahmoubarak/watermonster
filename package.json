@@ -1,14 +1,11 @@
 {
   "name": "watermonster",
-  "version": "0.1.22",
+  "version": "0.1.25",
   "license": "MIT",
   "author": "Abdallah Moubarak",
   "description": "This package is Water Monster assets",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "publishConfig": {
     "@abdallahmoubarak:registry": "https://npm.pkg.github.com/@abdallahmoubarak/wm-assets"
   },

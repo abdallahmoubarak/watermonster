@@ -20,7 +20,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={` py-2 px-4 rounded-full mx-auto block w-fit min-w-[9rem] border cursor-pointer  transition-all duration-200 ease-in-out ${
+      className={`py-2 px-4 rounded-full mx-auto block w-fit min-w-[9rem] border cursor-pointer  transition-all duration-200 ease-in-out ${
         isDisabled
           ? "text-white bg-gray-400 border-gray-400 hover:bg-gray-400"
           : isSecondary

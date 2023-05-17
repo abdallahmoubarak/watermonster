@@ -26,6 +26,5 @@ test/
 *.config.js
 
 
-app
 next-env.d.ts
 tsconfig.tsbuildinfo

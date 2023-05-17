@@ -26,6 +26,7 @@ export const Secondary: Story = {
     isSecondary: true,
   },
 };
+
 export const Loading: Story = {
   args: {
     text: "Loading",
