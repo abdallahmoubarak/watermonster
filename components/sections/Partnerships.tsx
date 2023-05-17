@@ -1,4 +1,4 @@
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../atoms/SectionHeader";
 
 const partners = [
   {

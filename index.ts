@@ -1,5 +1,5 @@
-export { default as Button } from "./components/Button";
-export { default as SectionHeader } from "./components/SectionHeader";
+export { default as Button } from "./components/atoms/Button";
+export { default as SectionHeader } from "./components/atoms/SectionHeader";
 export { default as FlatLogo } from "./components/assets/FlatLogo";
 // export { default as AnimatedWifi } from "./components/assets/AnimatedWifi";
 export { default as TopBar } from "./components/molecules/TopBar";

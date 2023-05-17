@@ -1,7 +1,8 @@
-import Button from "../Button";
+import Button from "../atoms/Button";
 import { BsWhatsapp } from "react-icons/bs";
 // import AnimatedWifi from "../../assets/AnimatedWifi";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface HeroProps {
   title: string;
@@ -11,6 +12,7 @@ interface HeroProps {
 }
 
 export default function Hero({ title, subtitle, cta, link }: HeroProps) {
+  const router = useRouter();
   return (
     <div className="flex flex-col gap-4 rounded-2xl bg-darkgray text-white pb-8 p-4 pt-12 bg-[url('/png/HeroBackground.png')] bg-cover">
       <div className="flex row justify-between">
@@ -32,9 +34,11 @@ export default function Hero({ title, subtitle, cta, link }: HeroProps) {
         <h2 className="text-sm sm:text-lg tracking-wider">{subtitle}</h2>
       </div>
       <div className="w-fit mx-auto ">
-        <Link href={link}>
-          <Button text={cta} icon={<BsWhatsapp />} />
-        </Link>
+        <Button
+          text={cta}
+          icon={<BsWhatsapp />}
+          onClick={() => router.push(link)}
+        />
       </div>
     </div>
   );

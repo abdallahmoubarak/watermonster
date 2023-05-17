@@ -6,7 +6,11 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./stories/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
+    fontFamily: {
+      sans: ["Nunito", "Arial", "sans-serif"],
+    },
     extend: {
       colors: {
         primary: "#40A3C0",

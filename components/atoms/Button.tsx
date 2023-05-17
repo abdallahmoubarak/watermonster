@@ -33,9 +33,9 @@ export default function Button({
           <Image src={"/svg/Loading.svg"} height={50} width={50} alt={""} />
         </div>
       ) : (
-        <div className="flex gap-2 items-center whitespace-nowrap">
-          <span>{icon}</span>
-          <span>{text}</span>
+        <div className="flex gap-2 items-center justify-center whitespace-nowrap">
+          {icon && <div>{icon}</div>}
+          <div>{text}</div>
         </div>
       )}
     </button>

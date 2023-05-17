@@ -1,7 +1,7 @@
 import { BiDollarCircle } from "react-icons/bi";
 import Link from "next/link";
 import FlatLogo from "../assets/FlatLogo";
-import Button from "../Button";
+import Button from "../atoms/Button";
 
 export default function Header() {
   return (
