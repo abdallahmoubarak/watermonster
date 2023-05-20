@@ -1,5 +1,6 @@
 import { Nunito } from "next/font/google";
 import React from "react";
+import "../app/globals.css";
 
 const nunito = Nunito({
   subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
