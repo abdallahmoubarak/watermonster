@@ -20,7 +20,7 @@ export default function Button({
       } `}>
       {isLoading ? (
         <div className="w-[1rem] h-6 mx-auto flex justify-center items-center">
-          <Image src={"/svg/Loading.svg"} height={50} width={50} alt={""} />
+          <Image src={"/svg/Loading.svg"} height={60} width={60} alt={""} />
         </div>
       ) : (
         <div className="flex gap-2 items-center justify-center whitespace-nowrap">
