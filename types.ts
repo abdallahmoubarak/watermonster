@@ -4,7 +4,7 @@ interface ButtonProps {
   isDisabled?: boolean;
   isSecondary?: boolean;
   isLoading?: boolean;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
 }
 
 interface ProviderCardProps {

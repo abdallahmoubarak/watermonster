@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Loading from "../assets/Loading";
 
 export default function Button({
   text = "button",
@@ -19,8 +19,8 @@ export default function Button({
           : "border-primary bg-primary text-white hover:bg-primary80 hover:border-primary80 hover:text-darkgray"
       } `}>
       {isLoading ? (
-        <div className="w-[1rem] h-6 mx-auto flex justify-center items-center">
-          <Image src={"/svg/Loading.svg"} height={60} width={60} alt={""} />
+        <div className="w-6 h-6 mx-auto flex justify-center items-center">
+          <Loading />
         </div>
       ) : (
         <div className="flex gap-2 items-center justify-center whitespace-nowrap">
