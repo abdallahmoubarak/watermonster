@@ -5,66 +5,39 @@
   "license": "MIT",
   "author": "Abdallah Moubarak",
   "description": "This is Water Monster's assets package",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib/"
-  ],
-  "publishConfig": {
-    "@abdallahmoubarak:registry": "https://npm.pkg.github.com/@abdallahmoubarak/wm-assets"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abdallahmoubarak/wm-assets.git"
-  },
-  "bugs": {
-    "url": "https://github.com/abdallahmoubarak/wm-assets/issues"
-  },
-  "homepage": "https://github.com/abdallahmoubarak/wm-assets#readme",
   "scripts": {
     "dev": "next dev",
-    "build": "esbuild index.ts --bundle --outfile=out.js",
+    "build": "next build",
     "start": "next start",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build-tailwind": "npx tailwindcss -o ./lib/styles.css --minify",
-    "npm:publish": "npm run build && npm publish --access public"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@babel/cli": "^7.21.5",
-    "@babel/preset-env": "^7.21.5",
-    "@babel/preset-react": "^7.18.6",
-    "@storybook/addon-essentials": "^7.0.12",
-    "@storybook/addon-interactions": "^7.0.12",
-    "@storybook/addon-links": "^7.0.12",
-    "@storybook/addon-styling": "^1.0.8",
-    "@storybook/blocks": "^7.0.12",
-    "@storybook/nextjs": "^7.0.12",
-    "@storybook/react": "^7.0.12",
-    "@storybook/testing-library": "^0.0.14-next.2",
-    "@types/node": "20.1.4",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "autoprefixer": "^10.4.14",
-    "cross-env": "^7.0.3",
-    "esbuild": "^0.17.19",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2",
-    "eslint-plugin-storybook": "^0.6.12",
-    "next": "13.4.2",
-    "postcss": "^8.4.23",
-    "prettier": "^2.8.8",
+    "@types/node": "20.4.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "next": "13.4.9",
+    "postcss": "8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "storybook": "^7.0.12",
+    "react-icons": "^4.10.1",
     "tailwindcss": "3.3.2",
-    "ts-loader": "^9.4.2",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^5.0.4"
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-interactions": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/nextjs": "^7.0.26",
+    "@storybook/react": "^7.0.26",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "chromatic": "^6.19.9",
+    "eslint-plugin-storybook": "^0.6.12",
+    "storybook": "^7.0.26"
   }
 }

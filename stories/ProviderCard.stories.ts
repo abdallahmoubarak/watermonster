@@ -1,6 +1,5 @@
+import ProviderCard from "../components/atoms/ProviderCard";
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { ProviderCard } from "..";
 
 const meta: Meta<typeof ProviderCard> = {
   title: "ProviderCard",

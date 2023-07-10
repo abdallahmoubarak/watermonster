@@ -1,6 +1,5 @@
+import ProvidersList from "../components/molecules/ProvidersList";
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { ProvidersList } from "..";
 
 const meta: Meta<typeof ProvidersList> = {
   title: "ProvidersList",

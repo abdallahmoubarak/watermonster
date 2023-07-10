@@ -1,6 +1,5 @@
+import Partnerships from "../components/sections/Partnerships";
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Partnerships } from "..";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Partnerships> = {
