@@ -7,7 +7,7 @@ module.exports = {
     "./stories/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   mode: "jit",
-  purge: ["./components/**/*.{js,jsx,ts,tsx}", "./stories/*"],
+  content: ["./components/**/*.{js,jsx,ts,tsx}", "./stories/*"],
   theme: {
     fontFamily: {
       sans: ["Nunito", "Arial", "sans-serif"],

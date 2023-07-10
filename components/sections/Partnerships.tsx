@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeader from "../atoms/SectionHeader";
 
 const partners = [
@@ -21,9 +22,11 @@ export default function Partnerships() {
         {partners.map((partner, i) => (
           <div key={i}>
             <a href={partner.link} target="_blank" rel="noreferrer">
-              <img
+              <Image
                 src={partner.logo}
                 alt={partner.name}
+                height={40}
+                width={40}
                 className="h-36 w-auto object-contain mx-auto rounded-md border border-primary"
               />
             </a>

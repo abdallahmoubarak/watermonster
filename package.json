@@ -1,15 +1,21 @@
 {
   "name": "watermonster",
-  "version": "0.1.28",
+  "version": "0.1.37",
   "private": false,
   "license": "MIT",
   "author": {
     "name": "Abdallah Moubarak"
   },
   "description": "This is Water Monster's assets package",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "components",
+    "public"
+  ],
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx tailwindcss build app/globals.css -o  public/globals.css",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
@@ -42,7 +48,5 @@
     "chromatic": "^6.19.9",
     "eslint-plugin-storybook": "^0.6.12",
     "storybook": "^7.0.26"
-  },
-  "readme": "ERROR: No README data found!",
-  "_id": "watermonster@0.1.28"
+  }
 }
