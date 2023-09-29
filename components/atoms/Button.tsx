@@ -1,5 +1,14 @@
 import Loading from "../assets/Loading";
 
+interface ButtonProps {
+  title: string;
+  onClick?: () => void;
+  isDisabled?: boolean;
+  isSecondary?: boolean;
+  isLoading?: boolean;
+  icon?: React.ReactNode;
+}
+
 export default function Button({
   title = "button",
   onClick,
