@@ -1,7 +1,7 @@
 import Loading from "../assets/Loading";
 
 export default function Button({
-  text = "button",
+  title = "button",
   onClick,
   isSecondary,
   isLoading,
@@ -11,12 +11,14 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`py-2 px-4 rounded-full mx-auto block w-fit min-w-[9rem] border cursor-pointer  transition-all duration-200 ease-in-out ${
+      className={`py-2 px-4 rounded-full mx-auto block w-fit min-w-[9rem] border   transition-all duration-200 ease-in-out ${
         isDisabled
-          ? "text-white bg-gray-400 border-gray-400 hover:bg-gray-400"
+          ? "text-white bg-gray-400 border-gray-400 hover:bg-gray-400 cursor-not-allowed"
           : isSecondary
-          ? "bg-white text-secondary border-secondary hover:bg-secondary hover:text-white"
-          : "border-primary bg-primary text-white hover:bg-primary80 hover:border-primary80 hover:text-darkgray"
+          ? "bg-white text-secondary border-secondary hover:bg-secondary hover:text-white cursor-pointer"
+          : isLoading
+          ? "border-primary bg-primary hover:bg-primary cursor-wait"
+          : "border-primary bg-primary text-white hover:bg-primary80 hover:border-primary80 hover:text-darkgray cursor-pointer"
       } `}>
       {isLoading ? (
         <div className="w-6 h-6 mx-auto flex justify-center items-center">
@@ -25,7 +27,7 @@ export default function Button({
       ) : (
         <div className="flex gap-2 items-center justify-center whitespace-nowrap">
           {icon && <div>{icon}</div>}
-          <div>{text}</div>
+          <div>{title}</div>
         </div>
       )}
     </button>

@@ -1,12 +1,3 @@
-interface ButtonProps {
-  text: string;
-  onClick?: () => void;
-  isDisabled?: boolean;
-  isSecondary?: boolean;
-  isLoading?: boolean;
-  icon?: React.ReactNode;
-}
-
 interface ProviderCardProps {
   name: string;
   image: string;
